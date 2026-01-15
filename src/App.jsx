@@ -15,6 +15,8 @@ import ProductDetail from './pages/ProductDetails.jsx';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 import ProductPage from './pages/ProductPage.jsx';
+import AllProducts from './pages/AllProducts.jsx';
+import Blogs from './pages/Blogs.jsx';
 function App() {
   useEffect(() => {
     const aos_init = () => {
@@ -40,6 +42,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/products/:slug" element={<ProductPage/>} />
+            <Route path="/products" element={<AllProducts />} />
+            <Route path="/blogs" element={<Blogs/>} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
           </Routes>
         </ScrollToTop>

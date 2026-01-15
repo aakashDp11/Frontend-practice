@@ -13,22 +13,14 @@ const NavLinks = () => {
   " smooth to="/#about">
                 About
             </HashLink>
-            {/* <HashLink className="
-    relative text-[0.9rem]  inline-block font-semibold text-black hover:text-orange-600
-    after:absolute after:left-0 after:-bottom-1
-    after:h-[2px] after:w-0 after:bg-black
-    after:transition-all after:duration-300 after:ease-out
-    hover:after:w-full
-  " smooth to="/#products">
-                Products
-            </HashLink> */}
+          
 <div className="hidden lg:inline-block">
   <ProductsMenu />
 </div>
 
         
 <HashLink
-  to="/"
+  to="/products"
   className="
     relative text-[0.9rem]  inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
@@ -48,7 +40,7 @@ const NavLinks = () => {
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out
     hover:after:w-full
-  " to="/contact#contact">
+  " to="/blogs">
                 Blogs
             </HashLink>
             <HashLink className="
@@ -60,9 +52,7 @@ const NavLinks = () => {
   " to="/contact#contact">
                 Contact Us
             </HashLink>
-            {/* <HashLink className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl" smooth to="/get-demo#demo">
-                Demo our products
-            </HashLink> */}
+           
         </>
     )
 }

@@ -91,7 +91,7 @@ const ProductsMenu = () => {
                       {hasMore && (
                         <li>
                           <NavLink
-                            to={cat.route}
+                            to="/products"
                             className="text-sm font-semibold text-orange-600 hover:text-orange-700 transition"
                             onClick={() => setOpen(false)}
                           >

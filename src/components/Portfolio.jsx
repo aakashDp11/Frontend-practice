@@ -135,13 +135,13 @@ const Portfolio = () => {
                 
                 {/* Header Section */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 uppercase tracking-tight">
+                    <h2 className="text-3xl md:text-3xl font-serif font-bold text-gray-900 uppercase tracking-tight">
                         Our Product Categories
                     </h2>
                     <div className='flex justify-center mt-4'>
                         <div className='w-24 border-b-4 border-orange-500'></div>
                     </div>
-                    <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+                    <p className="mt-6 text-gray-800 max-w-2xl mx-auto text-md">
                         High-performance ingredients engineered for nutritional integrity and operational efficiency.
                     </p>
                 </div>
@@ -169,14 +169,14 @@ const Portfolio = () => {
                                     {item.title}
                                 </h4>
                                 
-                                <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-grow">
+                                <p className="text-gray-800 text-sm leading-relaxed mb-4 flex-grow">
                                     {item.description}
                                 </p>
 
                                 {/* Feature Tags */}
                                 <div className="space-y-2 mb-6">
                                     {item.features.map((feature, idx) => (
-                                        <div key={idx} className="flex items-center text-xs font-semibold text-gray-400">
+                                        <div key={idx} className="flex items-center text-xs font-semibold text-gray-800">
                                             <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-2"></span>
                                             {feature}
                                         </div>

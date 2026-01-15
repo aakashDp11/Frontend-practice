@@ -60,31 +60,34 @@ const Intro = () => {
 
                     {/* Text Column */}
                     <div className="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-left">
-                        <span className="text-orange-500 font-bold tracking-widest uppercase text-sm">
+                        <span className="text-orange-700 font-bold tracking-widest uppercase text-sm">
                             Industry Leaders in Preservation
                         </span>
                         
-                        <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-gray-900 leading-tight">
+                        <h2 className="mt-4 text-3xl md:text-4xl lg:text-2xl font-serif font-bold text-gray-900 leading-tight">
                             Premium Freeze-Dried Solutions for Modern Brands
                         </h2>
                         
                         <div className="mt-6 space-y-6">
-                            <p className='text-lg text-gray-600 leading-relaxed'>
-                                We specialize in developing high-quality, organic freeze-dried ingredients tailored for institutions, food manufacturers, and growing SMEs. 
+                            <p className='text-sm text-gray-800 leading-relaxed'>
+                                <span className='font-semibold'>RAVID ENTERPRISE</span> is in Vacuum freeze-drying business involves the process of removing moisture from foods, Fruits,Vegetables,Milk,Coffe etc by freezing them and then subjecting them to a vacuum to remove ice via sublimation, leaving behind a dried product. This method preserves the product’s taste, texture, and nutrients better than traditional drying methods. We established with a commitment to quality and innovation, our company leverages cutting-edge freeze-drying technology to preserve the integrity, taste, and nutritional value of a wide range of products.
                             </p>
+{/* <p className="text-sm text-gray-600 leading-relaxed text-center">
+  <span className="font-semibold">RAVID ENTERPRISE</span> is in Vacuum freeze-drying business involves the process of removing moisture from foods, Fruits, Vegetables, Milk, Coffee etc by freezing them and then subjecting them to a vacuum to remove ice via sublimation, leaving behind a dried product. This method preserves the product’s taste, texture, and nutrients better than traditional drying methods. We established with a commitment to quality and innovation, our company leverages cutting-edge freeze-drying technology to preserve the integrity, taste, and nutritional value of a wide range of products.
+</p> */}
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                                 <div className="border-l-4 border-orange-400 pl-4">
                                     <h4 className="font-bold text-gray-800">Nutritional Integrity</h4>
-                                    <p className="text-sm text-gray-500">Preserving 97% of nutrients and original flavor profiles.</p>
+                                    <p className="text-sm text-gray-800">Preserving 97% of nutrients and original flavor profiles.</p>
                                 </div>
                                 <div className="border-l-4 border-orange-400 pl-4">
                                     <h4 className="font-bold text-gray-800">Supply Chain Ready</h4>
-                                    <p className="text-sm text-gray-500">Scalable production volumes with global shipping standards.</p>
+                                    <p className="text-sm text-gray-800">Scalable production volumes with global shipping standards.</p>
                                 </div>
                             </div>
 
-                            <p className='text-md text-gray-500 italic'>
+                            <p className='text-md text-gray-800 italic'>
                                 "We take full responsibility for the quality and safety of our ingredients, ensuring your brand delivers nothing but the best to your customers."
                             </p>
                         </div>
