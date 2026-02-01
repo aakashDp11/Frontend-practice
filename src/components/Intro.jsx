@@ -36,27 +36,33 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import freezeDrying from '../images/clients/freezeDrying.png';
+import freezeDrying from '../images/clients/Picture1.png';
+import freezeDrying1 from '../images/clients/Picture2.png';
+import freezeDrying2 from '../images/clients/Freeze-dried-final.png';
 
 const Intro = () => {
     return (
-        <section className="bg-white py-16 lg:py-24" id='about'>
+        <section className="bg-white py-8 lg:py-8" id='about'>
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     
                     {/* Image Column */}
-                    <div className="w-full lg:w-1/2" data-aos="fade-right">
-                        <div className="relative">
-                            {/* Decorative element to make the illustration look more professional */}
-                            <div className="absolute -top-4 -left-4 w-24 h-24 bg-orange-50 rounded-full z-0" />
-                            <img 
-                                alt="Freeze Drying Process Illustration" 
-                                className="relative z-10 w-full h-auto drop-shadow-sm hover:scale-105 transition-transform duration-500" 
-                                src={freezeDrying} 
-                            />
-                            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gray-50 rounded-full z-0" />
-                        </div>
-                    </div>
+               
+                   <div className="w-full lg:w-1/2 flex justify-center" data-aos="fade-right">
+    <div className="relative flex justify-center items-center w-full">
+        {/* Top-Left Decorative element - Adjusted to follow the image width */}
+        {/* <div className="absolute -top-4 left-[15%] w-[70%] aspect-square bg-orange-50 rounded-full z-0" /> */}
+        
+        <img 
+            alt="Freeze Drying Process Illustration" 
+            className="relative z-10 w-[60%] h-auto drop-shadow-sm hover:scale-105 transition-transform duration-500" 
+            src={freezeDrying2} 
+        />
+      
+        {/* Bottom-Right Decorative element - Anchored to image corner */}
+        <div className="absolute -bottom-4 right-[15%] w-32 h-32 bg-gray-50 rounded-full z-0" />
+    </div>
+</div>
 
                     {/* Text Column */}
                     <div className="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-left">

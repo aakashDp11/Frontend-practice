@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
-import products from '../data1/index.js'; // Importing your actual product data
+import products from '../data2/index.js'; // Importing your actual product data
 
 const Blogs = () => {
     const navigate = useNavigate();

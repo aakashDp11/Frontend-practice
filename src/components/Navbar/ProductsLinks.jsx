@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import PRODUCT_CATEGORIES from '../../data/productsListData';
+import PRODUCT_CATEGORIES from '../../data2/productListData';
 const ProductsMenu = () => {
   const [open, setOpen] = useState(false);
   const closeTimeout = useRef(null);
@@ -80,7 +80,7 @@ const ProductsMenu = () => {
                       {visibleItems.map((item) => (
                         <li key={item.slug}>
                           <NavLink
-                            to={`/products/${item.slug}-powder`}
+                            to={`/products/${item.slug}`}
                             className="text-sm text-gray-700 hover:text-orange-600 transition"
                             onClick={() => setOpen(false)}
                           >

@@ -174,7 +174,7 @@ export default function BannerCarousel() {
       <span className="italic text-yellow-400">Scalable</span> Solutions.
     </h1>
 
-    <p className="text-lg md:text-md text-gray-200 mb-8 max-w-lg leading-relaxed font-light">
+    <p className="text-lg md:text-sm text-gray-200 mb-8 max-w-lg leading-relaxed font-light">
       Premium freeze-dried powders and slices engineered for global food brands, nutraceuticals, and clean-label snacks.
     </p>
 

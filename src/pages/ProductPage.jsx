@@ -1,13 +1,15 @@
 import { useParams } from "react-router-dom";
 
-import products from "../data1";
+import products from "../data2/index.js";
 import ProductDetails from "./ProductDetails";
 const ProductPage = () => {
   const { slug } = useParams();
-
+console.log("Slug from URL:", slug);
+console.log("Available products:", products);
   const product = products.find(
     (item) => item.slug === slug
   );
+  console.log("Matched product:", product);
 
   if (!product) {
     return (

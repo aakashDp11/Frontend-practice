@@ -50,6 +50,12 @@ import React from 'react';
 import kws from '../images/clients/kws.png';
 import geps from '../images/clients/geps.png';
 import protergia from '../images/clients/protergia.png';
+import license1 from '../images/clients/GMP.jpeg';
+import license2 from '../images/clients/NABL-Acredited.jpg';
+import license3 from '../images/clients/Haccp.jpeg';
+import license4 from '../images/clients/ISO 9000 2015.jpg';
+import license5 from '../images/clients/fssai.jfif';
+import license6 from '../images/clients/apeda.jfif';
 
 const Clients = () => {
     // Array of clients for cleaner mapping
@@ -57,6 +63,14 @@ const Clients = () => {
         { img: kws, name: "KWS" },
         { img: protergia, name: "Protergia" },
         { img: geps, name: "GEPS" },
+    ];
+    const clientLogos1 = [
+        { img: license1, name: "KWS" },
+        { img: license2, name: "Protergia" },
+        { img: license3, name: "GEPS" },
+        { img: license4, name: "GEPS" },
+        { img: license5, name: "GEPS" },
+        { img: license6, name: "GEPS" },
     ];
 
     return (
@@ -74,18 +88,18 @@ const Clients = () => {
                     <div className='flex justify-center mt-4'>
                         <div className='w-16 border-b-4 border-orange-500'></div>
                     </div>
-                    <p className="mt-6 text-gray-500 max-w-2xl mx-auto text-lg">
-                        We are proud to partner with global food brands, institutions, and manufacturers who prioritize quality and nutritional integrity.
+                    <p className="mt-6 text-gray-500 max-w-2xl mx-auto text-sm">
+                        We are proud to partner with global food brands, institutions, and manufacturers who prioritize quality , nutritional integrity with our respective licenses
                     </p>
                 </div>
 
                 {/* Logo Grid */}
                 <div 
-                    className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center lg:items-center gap-12 lg:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-700" 
+                    className="grid grid-cols-2 md:grid-cols-6 lg:flex lg:justify-center lg:items-center gap-12 lg:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-700" 
                     data-aos="fade-in" 
                     data-aos-delay="300"
                 >
-                    {clientLogos.map((client, index) => (
+                    {clientLogos1.map((client, index) => (
                         <div 
                             key={index} 
                             className="flex justify-center items-center transition-transform hover:scale-110 duration-300"

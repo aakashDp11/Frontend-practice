@@ -315,8 +315,15 @@ const Contact = () => {
                                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                                     </div>
                                     <div>
-                                        <h4 className="font-bold">Global Headquarters</h4>
-                                        <p className="text-sm text-blue-200">Industrial Zone, Phase II, <br/>Umbergaon, Gujarat, India</p>
+                                        {/* <h4 className="font-bold">Global Headquarters</h4>
+                                        <p className="text-sm text-blue-200">Industrial Zone, Phase II, <br/>Umbergaon, Gujarat, India</p> */}
+                                       
+                                <p className="text-sm text-blue-200">Ravid Enterprise</p>
+                                <p className="text-sm text-blue-200 mt-1"> Plot No 53, New GIDC</p>
+                                <p className="text-sm text-blue-200 mt-1">52 Hector, GIDC Umbergaon</p>
+                                <p className="text-sm text-blue-200 mt-1">Umbergaon, Gujarat 396171, India</p>
+                                
+                                <p className="text-sm text-blue-200 mt-1">Phone no: 9372451492, 9821042008</p>
                                     </div>
                                 </div>
 

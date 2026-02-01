@@ -1,219 +1,261 @@
 
 // import NavBar from "../components/Navbar/NavBar";
 // import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay } from "swiper/modules";
+// import { Autoplay, Pagination } from "swiper/modules";
+// import { ArrowLeft } from "lucide-react"; // Assuming you use lucide-react, or use a standard SVG
 // import "swiper/css";
+// import "swiper/css/pagination";
 
 // const ProductDetails = ({ product }) => {
+//   // Safety check if product isn't loaded yet
+//   if (!product) return <div className="pt-40 text-center">Loading...</div>;
+//   console.log("Rendering ProductDetails for:", product);
 //   return (
-//     <>
+//     <div className="min-h-screen bg-white">
 //       <NavBar />
 
-//       {/* Offset for fixed navbar */}
-//       <div className="pt-28 mt-[3%] bg-white ml-[3%] ">
+//       {/* Main Container */}
+//       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+        
+//         {/* --- BACK BUTTON --- */}
+//         <div className="mb-8">
+//           <button 
+//             onClick={() => window.history.back()}
+//             className="flex items-center text-gray-600 hover:text-orange-600 transition-colors group"
+//           >
+//             <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
+//             <span className="font-medium">Back to Products</span>
+//           </button>
+//         </div>
 
-//         {/* ================= HERO ================= */}
-//     <section className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+//         {/* ================= HERO SECTION ================= */}
+//         <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-start">
+          
+//           {/* LEFT — IMAGE CAROUSEL */}
+//           <div className="w-full">
+//             <Swiper
+//               modules={[Autoplay, Pagination]}
+//               pagination={{ clickable: true }}
+//               autoplay={{
+//                 delay: 3500,
+//                 disableOnInteraction: false,
+//                 pauseOnMouseEnter: true,
+//               }}
+//               loop
+//               className="rounded-3xl shadow-xl overflow-hidden border border-gray-100"
+//             >
+//               {/* {product?.images?.gallery?.map((img, index) => ( */}
+//               {product?.images?.map((img, index) => (
+//                 <SwiperSlide key={index}>
+//                   <div className="aspect-square md:aspect-[4/3] w-full">
+//                     {/* <img
+//                       src={img}
+//                       alt={`${product.name} ${index + 1}`}
+//                       className="w-full h-full object-cover"
+//                     /> */}
+//                     <img
+//   src={`/images/clients/${img}.png`}
+//   alt={`${product.name} ${index + 1}`}
+//   className="w-full h-full object-cover"
+// />
 
-//   {/* LEFT — IMAGE (CONSTRAINED, NOT STRETCHED) */}
-//   <div className="w-full max-w-lg">
-//     <Swiper
-//       modules={[Autoplay]}
-//       autoplay={{
-//         delay: 3000,
-//         disableOnInteraction: false,
-//         pauseOnMouseEnter: true,
-//       }}
-//       loop
-//       speed={800}
-//       className="rounded-2xl shadow-lg overflow-hidden"
-//     >
-//       {product?.images?.gallery?.map((img, index) => (
-//         <SwiperSlide key={index}>
-//           <img
-//             src={img}
-//             alt={`${product.name} ${index + 1}`}
-//             className="w-full h-full object-cover"
-//           />
-//         </SwiperSlide>
-//       ))}
-//     </Swiper>
-//   </div>
+//                   </div>
+//                 </SwiperSlide>
+//               ))}
+//             </Swiper>
+//           </div>
 
-//   {/* RIGHT — CONTENT */}
-//   <div className="flex flex-col items-start text-left mt-[5%]">
-//     <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-//       {product.name}
-//     </h1>
+//           {/* RIGHT — CONTENT */}
+//           <div className="flex flex-col justify-center">
+//             <h1 className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-gray-900 tracking-tight">
+//               {product.name}
+//             </h1>
+            
+//             <div className="w-20 h-1.5 bg-orange-500 mt-4 rounded-full"></div>
 
-//     <p className="mt-4 text-gray-600 leading-relaxed max-w-xl">
-//       {product.longDescription}
-//     </p>
+//             <p className="mt-8 text-md text-gray-600 leading-relaxed">
+//               {product.longDescription}
+//             </p>
 
-//     <div className="mt-8 flex flex-wrap gap-4">
-//       <a
-//         href="/contact#contact"
-//         className="px-6 py-3 bg-orange-600 text-white rounded-lg text-sm font-semibold hover:bg-orange-700 transition"
-//       >
-//         Enquire Now
-//       </a>
+//             <div className="mt-10 flex flex-col sm:flex-row gap-4 text-sm">
+//               <a
+//                 href="/contact#contact"
+//                 className="px-8 py-4 bg-orange-600 text-white rounded-xl text-center font-bold hover:bg-orange-700 hover:shadow-lg transition-all active:scale-95"
+//               >
+//                 Enquire Now
+//               </a>
 
-//       <a
-//         href="/#products"
-//         className="px-6 py-3 border border-gray-300 rounded-lg text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
-//       >
-//         View More Products
-//       </a>
-//     </div>
-//   </div>
-
-// </section>
-
-
-
-
-
-//         {/* ================= QUICK FACTS ================= */}
-//         <section className="max-w-7xl mx-auto px-4 md:px-8 mt-16">
-//           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-           
- 
-
+//               <a
+//                 href="/#products"
+//                 className="px-8 py-4 border border-gray-300 rounded-xl text-center font-bold text-gray-700 hover:bg-gray-50 transition-all"
+//               >
+//                 View Catalog
+//               </a>
+//             </div>
 //           </div>
 //         </section>
 
-//         {/* ================= OVERVIEW ================= */}
-    
-
 //         {/* ================= SPECIFICATIONS ================= */}
-//         <section className="max-w-7xl mx-auto px-4 md:px-8 mt-20">
-//           <h2 className="text-2xl font-semibold text-gray-900">
-//             Specifications
+//         <section className="mt-24">
+//           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+//             Technical Specifications
 //           </h2>
 
-//           <div className="mt-6 bg-white border rounded-xl overflow-hidden shadow-sm">
-//             <table className="min-w-full">
-//               <tbody>
-//                 {product.specifications.map((spec, index) => (
-//                   <tr
-//                     key={index}
-//                     className="odd:bg-white even:bg-gray-50"
-//                   >
-//                     <td className="px-6 py-4 text-sm font-medium text-gray-700 w-1/3">
-//                       {spec.label}
-//                     </td>
-//                     <td className="px-6 py-4 text-sm text-gray-600">
-//                       {spec.value}
-//                     </td>
-//                   </tr>
-//                 ))}
-//               </tbody>
-//             </table>
+//           <div className="bg-gray-50 rounded-2xl p-2 sm:p-4 border border-gray-100 shadow-sm">
+//             <div className="overflow-hidden rounded-xl border border-gray-200">
+//               <table className="min-w-full divide-y divide-gray-200">
+//                 <tbody className="bg-white divide-y divide-gray-200">
+//                   {/* {product?.specifications?.map((spec, index) => (
+//                     <tr key={index} className="hover:bg-gray-50 transition-colors">
+//                       <td className="px-6 py-4 text-sm font-semibold text-gray-700 bg-gray-50 w-1/3">
+//                         {spec.label}
+//                       </td>
+//                       <td className="px-6 py-4 text-sm text-gray-600">
+//                         {spec.value}
+//                       </td>
+//                     </tr>
+//                   ))} */}
+//                   {product?.specifications &&
+//   Object.entries(product.specifications).map(
+//     ([label, value], index) => (
+//       <tr key={index} className="hover:bg-gray-50 transition-colors">
+//         <td className="px-6 py-4 text-sm font-semibold text-gray-700 bg-gray-50 w-1/3">
+//           {label}
+//         </td>
+//         <td className="px-6 py-4 text-sm text-gray-600">
+//           {value}
+//         </td>
+//       </tr>
+//     )
+//   )}
+
+//                 </tbody>
+//               </table>
+//             </div>
 //           </div>
 //         </section>
 
 //         {/* ================= APPLICATIONS ================= */}
-//         <section className="max-w-7xl mx-auto px-4 md:px-8 mt-20">
-//           <h2 className="text-2xl font-semibold text-gray-900">
+//         <section className="mt-20">
+//           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
 //             Applications
 //           </h2>
-
-//           <div className="mt-6 flex flex-wrap gap-3">
-//             {product.applications.map((app, index) => (
+//           <div className="flex flex-wrap gap-3">
+//             {/* {product?.applications?.map((app, index) => (
 //               <span
 //                 key={index}
-//                 className="px-4 py-2 text-sm border border-gray-200 rounded-full bg-white text-gray-700 shadow-sm"
+//                 className="px-5 py-2.5 text-sm font-medium border border-orange-100 rounded-full bg-orange-50 text-orange-700 shadow-sm"
 //               >
 //                 {app}
 //               </span>
-//             ))}
+//             ))} */}
+//             {product?.applications?.map((app, index) => (
+//   <span
+//     key={index}
+//     className="px-5 py-2.5 text-sm font-medium border border-orange-100 rounded-full bg-orange-50 text-orange-700 shadow-sm"
+//     title={app.description}
+//   >
+//     {app.name}
+//   </span>
+// ))}
+
 //           </div>
 //         </section>
 
 //         {/* ================= MANUFACTURING PROCESS ================= */}
-//         <section className="max-w-7xl mx-auto px-4 md:px-8 mt-20">
-//           <h2 className="text-2xl font-semibold text-gray-900">
+//         <section className="mt-20">
+//           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
 //             Manufacturing Process
 //           </h2>
-
-//           <div className="mt-8 space-y-4 max-w-4xl">
-//             {product.manufacturingProcess.map((step, index) => (
+//           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//             {product?.manufacturingProcess?.map((step, index) => (
 //               <div
 //                 key={index}
-//                 className="border rounded-xl px-6 py-4 bg-white shadow-sm"
+//                 className="relative pl-14 pr-6 py-6 border border-gray-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow"
 //               >
-//                 <h3 className="font-semibold text-gray-800">
-//                   {index + 1}. {step.step}
-//                 </h3>
-//                 <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-//                   {step.description}
-//                 </p>
+//                 <span className="absolute left-4 top-6 flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-white font-bold text-sm">
+//                   {index + 1}
+//                 </span>
+             
+//                 <h3 className="font-bold text-gray-800 text-lg">
+//   {step}
+// </h3>
+
 //               </div>
 //             ))}
 //           </div>
 //         </section>
 
 //         {/* ================= PACKAGING ================= */}
-//         <section className="max-w-7xl mx-auto px-4 md:px-8 mt-20 mb-28">
-//           <h2 className="text-2xl font-semibold text-gray-900">
+//         <section className="mt-20">
+//           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
 //             Packaging & Storage
 //           </h2>
+//           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          
+//             <InfoCard
+//   label="Pack Sizes"
+//   value={product?.moreInfo?.["Pkg Size"]}
+// />
+// <InfoCard
+//   label="Shelf Life"
+//   value={product?.moreInfo?.["Shelf Life"]}
+// />
+// <InfoCard
+//   label="Packaging Material"
+//   value={product?.moreInfo?.["Packaging Material"]}
+// />
 
-//           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-//             <InfoCard
-//               label="Pack Sizes"
-//               value={product.packaging.packSizes.join(", ")}
-//             />
-//             <InfoCard
-//               label="Shelf Life"
-//               value={product.packaging.shelfLife}
-//             />
-//             <InfoCard
-//               label="Packaging Material"
-//               value={product.packaging.material}
-//             />
 //           </div>
 //         </section>
-//       </div>
-//     </>
+//       </main>
+//     </div>
 //   );
 // };
 
+// // Reusable Info Card Component
 // const InfoCard = ({ label, value }) => (
-//   <div className="border rounded-xl p-6 bg-white shadow-sm">
-//     <p className="text-sm text-gray-500">{label}</p>
-//     <p className="mt-1 font-semibold text-gray-800">{value}</p>
+//   <div className="border border-gray-100 rounded-2xl p-6 bg-gray-50 transition-transform hover:-translate-y-1">
+//     <p className="text-xs font-bold uppercase tracking-wider text-gray-400">{label}</p>
+//     <p className="mt-2 font-bold text-gray-800 text-lg">{value || "N/A"}</p>
 //   </div>
 // );
 
 // export default ProductDetails;
 
+import React, { useState } from "react";
 import NavBar from "../components/Navbar/NavBar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { ArrowLeft } from "lucide-react"; // Assuming you use lucide-react, or use a standard SVG
+import { ArrowLeft } from "lucide-react";
 import "swiper/css";
 import "swiper/css/pagination";
 
 const ProductDetails = ({ product }) => {
-  // Safety check if product isn't loaded yet
-  if (!product) return <div className="pt-40 text-center">Loading...</div>;
+  // 1. State to track the selected category (default to first item)
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+
+  // Safety check
+  if (!product || !product.data || product.data.length === 0) {
+    return <div className="pt-40 text-center">Loading...</div>;
+  }
+
+  // 2. Get the specific data for the selected tab
+  const activeData = product.data[activeTabIndex];
 
   return (
     <div className="min-h-screen bg-white">
       <NavBar />
 
-      {/* Main Container */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
-        
-        {/* --- BACK BUTTON --- */}
+        {/* BACK BUTTON */}
         <div className="mb-8">
-          <button 
+          <button
             onClick={() => window.history.back()}
             className="flex items-center text-gray-600 hover:text-orange-600 transition-colors group"
           >
-            <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
-            <span className="font-medium">Back to Products</span>
+            <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 font-bold transition-transform" />
+            {/* <span className="font-medium">Back to Products</span> */}
           </button>
         </div>
 
@@ -221,42 +263,84 @@ const ProductDetails = ({ product }) => {
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-start">
           
           {/* LEFT — IMAGE CAROUSEL */}
-          <div className="w-full">
-            <Swiper
-              modules={[Autoplay, Pagination]}
-              pagination={{ clickable: true }}
-              autoplay={{
-                delay: 3500,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }}
-              loop
-              className="rounded-3xl shadow-xl overflow-hidden border border-gray-100"
-            >
-              {product?.images?.gallery?.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <div className="aspect-square md:aspect-[4/3] w-full">
-                    <img
-                      src={img}
-                      alt={`${product.name} ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+           <div className="w-full">
+    {/* 
+      FIX: Fallback logic. 
+      If activeData has no images, try to find any images in the product.data array 
+    */}
+    {(() => {
+      const displayImages = (activeData.images && activeData.images.length > 0) 
+        ? activeData.images 
+        : product.data.find(d => d.images && d.images.length > 0)?.images || [];
+      console.log("Displaying images for tab:", activeTabIndex, displayImages);
+      if (displayImages.length > 0) {
+        return (
+          <Swiper
+            key={activeTabIndex} // Force refresh on tab change
+            modules={[Autoplay, Pagination]}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+            loop
+            className="rounded-3xl shadow-xl overflow-hidden border border-gray-100"
+          >
+            {displayImages.map((img, index) => (
+              <SwiperSlide key={index}>
+                <div className="aspect-square w-full">
+                  <img
+                    src={`/images/clients/${img}.png`} 
+                    alt={activeData.fullName}
+                    className="w-full h-full object-cover"
+                    // Optional: Error handling if .png doesn't exist
+                    onError={(e) => { e.target.src = "/images/placeholder.jpg"; }} 
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        );
+      }
+
+      // Final fallback if absolutely no images exist in any category
+      return (
+        <div className="aspect-square md:aspect-[4/3] w-full bg-gray-100 rounded-3xl flex items-center justify-center text-gray-400">
+          <p>No Image Available</p>
+        </div>
+      );
+    })()}
+  </div>
 
           {/* RIGHT — CONTENT */}
           <div className="flex flex-col justify-center">
             <h1 className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-gray-900 tracking-tight">
               {product.name}
             </h1>
-            
-            <div className="w-20 h-1.5 bg-orange-500 mt-4 rounded-full"></div>
 
-            <p className="mt-8 text-md text-gray-600 leading-relaxed">
-              {product.longDescription}
+            {/* TABS FOR CATEGORIES */}
+            <div className="flex flex-wrap gap-2 mt-6 mb-2 border-b border-gray-100">
+              {product.data.map((item, index) => (
+                <button
+                  key={item.type}
+                  onClick={() => setActiveTabIndex(index)}
+                  className={`pb-3 px-4 text-sm font-bold transition-all relative ${
+                    activeTabIndex === index
+                      ? "text-orange-600"
+                      : "text-gray-400 hover:text-gray-600"
+                  }`}
+                >
+                  {item.type}
+                  {activeTabIndex === index && (
+                    <div className="absolute bottom-0 left-0 w-full h-1 bg-orange-500 rounded-full"></div>
+                  )}
+                </button>
+              ))}
+            </div>
+
+            {/* <h2 className="text-xl font-bold text-gray-800 mt-6">
+                {activeData.fullName}
+            </h2> */}
+            
+            <p className="mt-4 text-sm text-gray-600 leading-relaxed whitespace-pre-line">
+              {activeData.description}
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 text-sm">
@@ -266,7 +350,6 @@ const ProductDetails = ({ product }) => {
               >
                 Enquire Now
               </a>
-
               <a
                 href="/#products"
                 className="px-8 py-4 border border-gray-300 rounded-xl text-center font-bold text-gray-700 hover:bg-gray-50 transition-all"
@@ -278,25 +361,25 @@ const ProductDetails = ({ product }) => {
         </section>
 
         {/* ================= SPECIFICATIONS ================= */}
-        <section className="mt-24">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+        <section className="mt-14">
+          <h2 className="text-2xl sm:text-xl font-bold text-gray-900 mb-8">
             Technical Specifications
           </h2>
-
           <div className="bg-gray-50 rounded-2xl p-2 sm:p-4 border border-gray-100 shadow-sm">
             <div className="overflow-hidden rounded-xl border border-gray-200">
               <table className="min-w-full divide-y divide-gray-200">
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {product?.specifications?.map((spec, index) => (
-                    <tr key={index} className="hover:bg-gray-50 transition-colors">
-                      <td className="px-6 py-4 text-sm font-semibold text-gray-700 bg-gray-50 w-1/3">
-                        {spec.label}
-                      </td>
-                      <td className="px-6 py-4 text-sm text-gray-600">
-                        {spec.value}
-                      </td>
-                    </tr>
-                  ))}
+                  {activeData.specifications &&
+                    Object.entries(activeData.specifications).map(([label, value], index) => (
+                      <tr key={index} className="hover:bg-gray-50 transition-colors">
+                        <td className="px-6 py-4 text-sm font-semibold text-gray-700 bg-gray-50 w-1/3">
+                          {label}
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          {value}
+                        </td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>
@@ -304,65 +387,52 @@ const ProductDetails = ({ product }) => {
         </section>
 
         {/* ================= APPLICATIONS ================= */}
-        <section className="mt-20">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+        <section className="mt-14">
+          <h2 className="text-2xl sm:text-xl font-bold text-gray-900 mb-6">
             Applications
           </h2>
           <div className="flex flex-wrap gap-3">
-            {product?.applications?.map((app, index) => (
+            {activeData.applications?.map((app, index) => (
               <span
                 key={index}
-                className="px-5 py-2.5 text-sm font-medium border border-orange-100 rounded-full bg-orange-50 text-orange-700 shadow-sm"
+                className="px-6 py-2.5 text-sm font-medium border border-orange-100 rounded-full bg-orange-50 text-orange-700 shadow-sm"
+                title={app.description}
               >
-                {app}
+                {app.name}
               </span>
             ))}
           </div>
         </section>
 
         {/* ================= MANUFACTURING PROCESS ================= */}
-        <section className="mt-20">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+        <section className="mt-14">
+          <h2 className="text-2xl sm:text-xl font-bold text-gray-900 mb-8">
             Manufacturing Process
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {product?.manufacturingProcess?.map((step, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {activeData.manufacturingProcess?.map((step, index) => (
               <div
                 key={index}
-                className="relative pl-14 pr-6 py-6 border border-gray-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow"
+                className="relative pl-14 pr-4 py-4 border border-gray-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow"
               >
-                <span className="absolute left-4 top-6 flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-white font-bold text-sm">
+                <span className="absolute left-4 top-4 flex items-center justify-center w-6 h-6 rounded-full bg-orange-600 text-white font-bold text-xs">
                   {index + 1}
                 </span>
-                <h3 className="font-bold text-gray-800 text-lg">
-                  {step.step}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                  {step.description}
-                </p>
+                <h3 className="font-bold text-gray-800 text-sm">{step}</h3>
               </div>
             ))}
           </div>
         </section>
 
         {/* ================= PACKAGING ================= */}
-        <section className="mt-20">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+        <section className="mt-14">
+          <h2 className="text-xl sm:text-xl font-bold text-gray-900 mb-8">
             Packaging & Storage
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <InfoCard
-              label="Pack Sizes"
-              value={product?.packaging?.packSizes?.join(", ")}
-            />
-            <InfoCard
-              label="Shelf Life"
-              value={product?.packaging?.shelfLife}
-            />
-            <InfoCard
-              label="Packaging Material"
-              value={product?.packaging?.material}
-            />
+            <InfoCard label="Pack Sizes" value={activeData.moreInfo?.["Pkg Size"]} />
+            <InfoCard label="Shelf Life" value={activeData.moreInfo?.["Shelf Life"]} />
+            <InfoCard label="Packaging Material" value={activeData.moreInfo?.["Packaging Material"]} />
           </div>
         </section>
       </main>
@@ -370,11 +440,10 @@ const ProductDetails = ({ product }) => {
   );
 };
 
-// Reusable Info Card Component
 const InfoCard = ({ label, value }) => (
   <div className="border border-gray-100 rounded-2xl p-6 bg-gray-50 transition-transform hover:-translate-y-1">
     <p className="text-xs font-bold uppercase tracking-wider text-gray-400">{label}</p>
-    <p className="mt-2 font-bold text-gray-800 text-lg">{value || "N/A"}</p>
+    <p className="mt-2 font-bold text-gray-800 text-sm">{value || "N/A"}</p>
   </div>
 );
 

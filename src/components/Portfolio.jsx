@@ -96,35 +96,38 @@
 // export default Portfolio;
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import FreezeDriedVegetables from '../images/clients/CabbageGreen-pow-pdt1.png'
+import FreezeDriedFruit from '../images/clients/banana-pow-pdt1.png'
+import FreezeDriedHerbs from '../images/clients/Curry-Leaves-pdt1.png'
+import RTE from '../images/clients/Curries & Gravies.png'
 const products = [
     {
         id: 1,
         title: "Freeze-Dried Vegetables",
         description: "Premium selection of corn, peas, and bell peppers. Ideal for instant soups, snack mixes, and industrial food processing.",
         features: ["100% Purity", "2-Year Shelf Life", "Quick Rehydration"],
-        image: "https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&q=80&w=800"
+        image: FreezeDriedVegetables
     },
     {
         id: 2,
         title: "Freeze-Dried Fruits",
         description: "Crispy slices and powders of mango, strawberry, and banana. Perfect for breakfast cereals and confectionery.",
         features: ["No Added Sugar", "Nutrient Dense", "Vibrant Color"],
-        image: "https://images.unsplash.com/photo-1590779033100-9f60705a2f3b?auto=format&fit=crop&q=80&w=800"
+        image: FreezeDriedFruit
     },
     {
         id: 3,
-        title: "Freeze-Dried Masalas",
+        title: "Freeze-Dried Herbs",
         description: "Concentrated spice blends and herbs that retain their essential oils and aromatic profiles through cold-processing.",
         features: ["Aroma Retention", "Zero Fillers", "Bulk Packaging"],
-        image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&q=80&w=800"
+        image: FreezeDriedHerbs
     },
     {
         id: 4,
         title: "Ready-to-Eat Foods",
         description: "Gourmet meal solutions that require only hot water. Scalable options for institutional catering and travel retail.",
         features: ["Clean Label", "Lightweight", "Chef-Crafted"],
-        image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800"
+        image: RTE
     }
 ];
 
@@ -141,7 +144,7 @@ const Portfolio = () => {
                     <div className='flex justify-center mt-4'>
                         <div className='w-24 border-b-4 border-orange-500'></div>
                     </div>
-                    <p className="mt-6 text-gray-800 max-w-2xl mx-auto text-md">
+                    <p className="mt-6 text-gray-800 max-w-2xl mx-auto text-sm">
                         High-performance ingredients engineered for nutritional integrity and operational efficiency.
                     </p>
                 </div>
@@ -155,7 +158,7 @@ const Portfolio = () => {
                             data-aos="fade-up"
                         >
                             {/* Image Container */}
-                            <div className="h-48 overflow-hidden">
+                            <div className="h-64 overflow-hidden">
                                 <img 
                                     src={item.image} 
                                     alt={item.title} 
@@ -165,11 +168,11 @@ const Portfolio = () => {
 
                             {/* Content */}
                             <div className="p-6 flex flex-col flex-grow">
-                                <h4 className="text-xl font-bold text-gray-800 mb-3 font-serif">
+                                <h4 className="text-lg font-bold text-gray-800 mb-3 font-serif">
                                     {item.title}
                                 </h4>
                                 
-                                <p className="text-gray-800 text-sm leading-relaxed mb-4 flex-grow">
+                                <p className="text-gray-800 text-xs leading-relaxed mb-4 flex-grow">
                                     {item.description}
                                 </p>
 
@@ -195,7 +198,7 @@ const Portfolio = () => {
                 </div>
                 
                 <div className="mt-16 text-center">
-                    <Link to="/contact" className="text-orange-600 font-bold hover:underline">
+                    <Link to="/contact" className="text-orange-600 font-bold text-sm hover:underline">
                         Need a custom formulation? Talk to our R&D team →
                     </Link>
                 </div>
