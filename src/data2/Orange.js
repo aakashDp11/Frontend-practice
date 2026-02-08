@@ -106,46 +106,7 @@ export default {
         "Particle Size": "Not applicable (whole segments)"
       },
       "applications": [
-        {
-          "name": "Specifications",
-          "description": ""
-        },
-        {
-          "name": "Botanical Name: Citrus sinensis",
-          "description": ""
-        },
-        {
-          "name": "Appearance: Intact, lightweight, porous segments",
-          "description": ""
-        },
-        {
-          "name": "Colour: Light yellow to orange (natural fruit color)",
-          "description": ""
-        },
-        {
-          "name": "Aroma: Fresh, natural orange aroma",
-          "description": ""
-        },
-        {
-          "name": "Taste: Sweet",
-          "description": "tangy characteristic orange flavor"
-        },
-        {
-          "name": "Shape/Form: Whole/or partial segments (as per order)",
-          "description": ""
-        },
-        {
-          "name": "Moisture Content: ≤ 4%",
-          "description": ""
-        },
-        {
-          "name": "Bulk Density: 0.10",
-          "description": "0.25 g/ml"
-        },
-        {
-          "name": "Particle Size: Not applicable (whole segments)",
-          "description": ""
-        },
+       
         {
           "name": "Snacks & RTE Foods: Premium fruit snacks, trail mixes, kids’ snack packs.",
           "description": ""

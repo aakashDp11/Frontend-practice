@@ -21,10 +21,7 @@ export default {
         "Mesh Size": "60–100 mesh (customizable as per application"
       },
       "applications": [
-        {
-          "name": "Solubility: Disperses well, rehydrates easily in water",
-          "description": ""
-        },
+        
         {
           "name": "Soups, Curries & Stews",
           "description": "Adds authentic flavor and nutrition."

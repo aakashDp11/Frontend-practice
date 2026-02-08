@@ -23,9 +23,7 @@ const AllProducts = () => {
                     p.slug.replace('-powder', '') === item.slug
                 );
 
-                // FIXED IMAGE LOGIC: 
-                // In your JSON, images are inside the 'data' array (e.g., Cubes or Powder)
-                // We find the first available image across all types.
+      
                 let firstAvailableImage = null;
                 if (richInfo?.data) {
                     const firstTypeWithImage = richInfo.data.find(d => d.images && d.images.length > 0);

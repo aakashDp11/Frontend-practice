@@ -105,50 +105,7 @@ export default {
         "Mesh Size": "60–80 mesh (customizable as per application"
       },
       "applications": [
-        {
-          "name": "Specifications",
-          "description": ""
-        },
-        {
-          "name": "Botanical Name: Brassica oleracea var. botrytis",
-          "description": ""
-        },
-        {
-          "name": "Appearance: Free",
-          "description": "flowing fine powder, free from lumps and foreign matter"
-        },
-        {
-          "name": "Color: Creamy white to pale yellow (depending on raw material and drying conditions)",
-          "description": ""
-        },
-        {
-          "name": "Flavor & Aroma: Characteristic mild cauliflower flavor and aroma, no off",
-          "description": "odor"
-        },
-        {
-          "name": "Moisture Content: ≤ 5%",
-          "description": ""
-        },
-        {
-          "name": "Bulk Density: 0.3",
-          "description": "0.6 g/ml"
-        },
-        {
-          "name": "pH: 5.5",
-          "description": "6.5"
-        },
-        {
-          "name": "Water Activity (aw): ≤ 0.3",
-          "description": ""
-        },
-        {
-          "name": "Mesh Size: 60",
-          "description": "80 mesh (customizable as per application)"
-        },
-        {
-          "name": "Solubility: Disperses well, rehydrates easily in water",
-          "description": ""
-        },
+     
         {
           "name": "Soups, Curries & Gravies",
           "description": "Adds fresh, aromatic flavor."

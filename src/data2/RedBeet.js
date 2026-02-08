@@ -1,5 +1,5 @@
 export default {
-  "name": "RedBeet",
+  "name": "Red Beet",
   "slug": "freeze-dried-redbeet",
   "categories": [
     "Powder"
@@ -85,7 +85,10 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129090"
       },
-      "images": [],
+      "images": [
+        "RedBeat-pow-pdt1",
+        "RedBeat-pow-pdt2"
+      ],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

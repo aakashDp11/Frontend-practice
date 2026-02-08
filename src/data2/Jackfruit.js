@@ -23,50 +23,7 @@ export default {
         "Texture": "Crisp; rehydrates quickly when soaked"
       },
       "applications": [
-        {
-          "name": "Specifications",
-          "description": ""
-        },
-        {
-          "name": "Botanical Name: Artocarpus heterophyllus",
-          "description": ""
-        },
-        {
-          "name": "Appearance: Crisp, porous, lightweight chips",
-          "description": ""
-        },
-        {
-          "name": "Colour: Natural yellow to golden yellow",
-          "description": ""
-        },
-        {
-          "name": "Aroma: Characteristic sweet jackfruit aroma",
-          "description": ""
-        },
-        {
-          "name": "Slice Thickness: 2",
-          "description": "4 mm (customizable)"
-        },
-        {
-          "name": "Moisture Content: ≤ 4%",
-          "description": ""
-        },
-        {
-          "name": "Water Activity (aw): ≤ 0.30",
-          "description": ""
-        },
-        {
-          "name": "pH (1% solution): 4.8",
-          "description": "5.8"
-        },
-        {
-          "name": "Bulk Density: 0.15",
-          "description": "0.30 g/ml"
-        },
-        {
-          "name": "Texture: Crisp; rehydrates quickly when soaked",
-          "description": ""
-        },
+       
         {
           "name": "Snacks & Ready",
           "description": "to"

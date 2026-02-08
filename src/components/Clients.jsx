@@ -83,13 +83,13 @@ const Clients = () => {
                         Global Reach
                     </span>
                     <h2 className="mt-3 text-3xl md:text-3xl font-serif font-bold text-[#013289]">
-                        Trusted by Industry Leaders
+                        Trusted by Brands
                     </h2>
                     <div className='flex justify-center mt-4'>
-                        <div className='w-16 border-b-4 border-orange-500'></div>
+                        <div className='w-16 border-b-4 border-orange-500'>Trusted by Brands</div>
                     </div>
                     <p className="mt-6 text-gray-500 max-w-2xl mx-auto text-sm">
-                        We are proud to partner with global food brands, institutions, and manufacturers who prioritize quality , nutritional integrity with our respective licenses
+                        We are proud to partner with food brands, institutions, and manufacturers who prioritize quality and nutritional integrity
                     </p>
                 </div>
 
@@ -116,7 +116,7 @@ const Clients = () => {
                 {/* Optional Trust Caption */}
                 <div className="mt-16 text-center" data-aos="fade-up">
                     <p className="text-sm text-gray-400 font-medium italic">
-                        All our partners undergo a rigorous quality and compliance onboarding process.
+                         We undergo rigorous quality and compliance audits conducted by a team of enterprise experts before onboarding.
                     </p>
                 </div>
 

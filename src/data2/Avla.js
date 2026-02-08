@@ -19,38 +19,7 @@ export default {
         "Bulk Density": "0.35 – 0.55 g/ml"
       },
       "applications": [
-        {
-          "name": "Specifications",
-          "description": ""
-        },
-        {
-          "name": "Botanical Name: Phyllanthus emblica / Emblica officinalis (Indian Gooseberry)",
-          "description": ""
-        },
-        {
-          "name": "Appearance: Fine, free",
-          "description": "flowing powder"
-        },
-        {
-          "name": "Colour: Light cream to pale brownish",
-          "description": "green"
-        },
-        {
-          "name": "Aroma: Characteristic tangy amla aroma",
-          "description": ""
-        },
-        {
-          "name": "Particle Size: 80",
-          "description": "120 mesh (customizable)"
-        },
-        {
-          "name": "Moisture Content: ≤ 5%",
-          "description": ""
-        },
-        {
-          "name": "Bulk Density: 0.35",
-          "description": "0.55 g/ml"
-        },
+       
         {
           "name": "Health Drinks & Smoothies",
           "description": "Added for natural vitamin C, antioxidants, and immunity support."
@@ -98,7 +67,10 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "08134090"
       },
-      "images": [],
+      "images": [
+        "amla-pow-pdt1",
+        "amla-pow-pdt2"
+      ],
       "manufacturingProcess": [
         "– Used in premixes, beverage bases, and fortified food preparations.",
         "More Info",

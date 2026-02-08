@@ -23,50 +23,7 @@ export default {
         "Solubility": "Rehydrates easily to near-original state"
       },
       "applications": [
-        {
-          "name": "Specifications",
-          "description": ""
-        },
-        {
-          "name": "Botanical Name: Allium sativum",
-          "description": ""
-        },
-        {
-          "name": "Appearance: Uniform chopped pieces, free from foreign matter",
-          "description": ""
-        },
-        {
-          "name": "Color: Off",
-          "description": "white to pale yellow"
-        },
-        {
-          "name": "Flavor & Aroma: Characteristic strong garlic flavor and aroma, no off",
-          "description": "odor"
-        },
-        {
-          "name": "Moisture Content: ≤ 5%",
-          "description": ""
-        },
-        {
-          "name": "Bulk Density: 0.35",
-          "description": "0.6 g/ml"
-        },
-        {
-          "name": "pH: 5.5",
-          "description": "6.5"
-        },
-        {
-          "name": "Water Activity (aw): ≤ 0.3",
-          "description": ""
-        },
-        {
-          "name": "Texture: Crisp and brittle, rehydrates quickly",
-          "description": ""
-        },
-        {
-          "name": "Solubility: Rehydrates easily to near",
-          "description": "original state"
-        },
+   
         {
           "name": "Soups, Curries & Gravies",
           "description": "Adds strong, authentic garlic flavor when rehydrated."

@@ -66,12 +66,18 @@ const Intro = () => {
 
                     {/* Text Column */}
                     <div className="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-left">
-                        <span className="text-orange-700 font-bold tracking-widest uppercase text-sm">
+                        {/* <span className="text-orange-700 font-bold tracking-widest uppercase text-sm">
                             Industry Leaders in Preservation
+                        </span> */}
+                        <span className="text-orange-700 font-bold tracking-widest uppercase text-sm">
+                            Process Driven Preservation Specialist
                         </span>
                         
-                        <h2 className="mt-4 text-3xl md:text-4xl lg:text-2xl font-serif font-bold text-gray-900 leading-tight">
+                        {/* <h2 className="mt-4 text-3xl md:text-4xl lg:text-2xl font-serif font-bold text-gray-900 leading-tight">
                             Premium Freeze-Dried Solutions for Modern Brands
+                        </h2> */}
+                        <h2 className="mt-4 text-3xl md:text-4xl lg:text-2xl font-serif font-bold text-gray-900 leading-tight">
+                           A dedicated freeze-drying specialist with state-of-the-art infrastructure.
                         </h2>
                         
                         <div className="mt-6 space-y-6">

@@ -20,48 +20,17 @@ export default {
         "Bulk Density": "0.15 – 0.30 g/ml"
       },
       "applications": [
-        {
-          "name": "Specifications",
-          "description": ""
-        },
-        {
-          "name": "Botanical Name: Manilkara zapota",
-          "description": ""
-        },
-        {
-          "name": "Appearance: Light, uniform pieces",
-          "description": ""
-        },
-        {
-          "name": "Colour: Creamy brown to light caramel",
-          "description": ""
-        },
-        {
-          "name": "Aroma: Characteristic sweet chikoo aroma",
-          "description": ""
-        },
-        {
-          "name": "Size: 5",
-          "description": "15 mm"
-        },
-        {
-          "name": "Moisture Content: ≤ 4%",
-          "description": ""
-        },
-        {
-          "name": "Bulk Density: 0.15",
-          "description": "0.30 g/ml"
-        },
+       
         {
           "name": "Snacks & Ready",
           "description": "to"
         },
         {
-          "name": "Bakery & Confectionery: Used in cookies, muffins, cakes, and pastries, Toppings for cupcakes, tarts, and dessert fillings, Enrobing in chocolates and truffles for a tropical flavor",
+          "name": "Bakery & Confectionery",
           "description": ""
         },
         {
-          "name": "Breakfast & Cereal Products: Added to granola, muesli, instant oats, and cereal clusters",
+          "name": "Breakfast & Cereal Products",
           "description": ""
         },
         {

@@ -1,5 +1,5 @@
 export default {
-  "name": "WhiteOnion",
+  "name": "White Onion",
   "slug": "freeze-dried-whiteonion",
   "categories": [
     "Flakes",

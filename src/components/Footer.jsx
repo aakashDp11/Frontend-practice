@@ -5,7 +5,8 @@ import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-gray-300 pl-4">
+        // <footer className="bg-gray-900 text-gray-300 pl-4">
+        <footer className="bg-gray-900 text-gray-300">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-6 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
@@ -104,8 +105,8 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="bg-black py-8">
-                <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 space-y-4 md:space-y-0">
+            {/* <div className="bg-black py-8">
+                <div className="max-w-8xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 space-y-4 md:space-y-0 w-full">
                     <p>Copyright &copy; {new Date().getFullYear()} Ravid Enterprises. All rights reserved.</p>
                     <div className="flex space-x-6">
                         <Link to="#" className="hover:text-white">Privacy Policy</Link>
@@ -113,7 +114,18 @@ const Footer = () => {
                         <Link to="#" className="hover:text-white">Cookie Settings</Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <div className="bg-black py-8 w-full">
+    {/* Removed max-w-8xl and mx-auto to allow content to span full width */}
+    <div className="px-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 space-y-4 md:space-y-0 w-full">
+        <p>Copyright &copy; {new Date().getFullYear()} Ravid Enterprises. All rights reserved.</p>
+        <div className="flex space-x-6">
+            <Link to="#" className="hover:text-white">Privacy Policy</Link>
+            <Link to="#" className="hover:text-white">Terms of Supply</Link>
+            <Link to="#" className="hover:text-white">Cookie Settings</Link>
+        </div>
+    </div>
+</div>
         </footer>
     );
 }

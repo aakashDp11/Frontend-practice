@@ -51,7 +51,7 @@ export default function BannerCarousel() {
   <div className="max-w-2xl text-white flex flex-col items-end text-right">
     
     {/* Subtle Label - margin-right auto removed to stay on the right */}
-    <span className="inline-block mt-[10%] py-1 px-3 mb-4 text-xs font-bold tracking-widest uppercase bg-yellow-500 text-black rounded">
+    <span className="inline-block mt-[12%] py-1 px-3 mb-4 text-xs font-bold tracking-widest uppercase bg-yellow-500 text-black rounded">
       Premium B2B Supply
     </span>
 

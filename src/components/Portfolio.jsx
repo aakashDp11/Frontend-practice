@@ -105,21 +105,21 @@ const products = [
         id: 1,
         title: "Freeze-Dried Vegetables",
         description: "Premium selection of corn, peas, and bell peppers. Ideal for instant soups, snack mixes, and industrial food processing.",
-        features: ["100% Purity", "2-Year Shelf Life", "Quick Rehydration"],
+        features: ["100% Purity", "1-Year Shelf Life", "Quick Rehydration"],
         image: FreezeDriedVegetables
     },
     {
         id: 2,
         title: "Freeze-Dried Fruits",
         description: "Crispy slices and powders of mango, strawberry, and banana. Perfect for breakfast cereals and confectionery.",
-        features: ["No Added Sugar", "Nutrient Dense", "Vibrant Color"],
+        features: ["Nutrient Dense","Enjoy anytime",  "Vibrant Color"],
         image: FreezeDriedFruit
     },
     {
         id: 3,
         title: "Freeze-Dried Herbs",
         description: "Concentrated spice blends and herbs that retain their essential oils and aromatic profiles through cold-processing.",
-        features: ["Aroma Retention", "Zero Fillers", "Bulk Packaging"],
+        features: ["Aroma Retention", "Zero Fillers", "Instant use"],
         image: FreezeDriedHerbs
     },
     {
@@ -145,7 +145,7 @@ const Portfolio = () => {
                         <div className='w-24 border-b-4 border-orange-500'></div>
                     </div>
                     <p className="mt-6 text-gray-800 max-w-2xl mx-auto text-sm">
-                        High-performance ingredients engineered for nutritional integrity and operational efficiency.
+                        Pure ingredients engineered for nutritional integrity and excellent outcome.
                     </p>
                 </div>
 
